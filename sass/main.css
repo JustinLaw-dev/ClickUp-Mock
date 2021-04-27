@@ -96,24 +96,59 @@ html {
 
 body {
   margin: 0 10vw;
-  background-color: linear-gradient(180deg, #f6fafd 0%, #ffffff 19.4%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#f6fafd), color-stop(19.4%, #ffffff));
+  background: linear-gradient(180deg, #f6fafd 0%, #ffffff 19.4%);
 }
 
 body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
+h1,
+h2 {
+  font-weight: 700;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+}
+
 .hero__heading {
   color: #212353;
+  font-size: 5rem;
+  line-height: 1.1;
 }
 
 .hero__p {
   color: #4b5d68;
+  font-size: 1.6rem;
 }
 
 button {
   border-radius: 50px;
   border: none;
+  font-family: 'Lato', sans-serif;
+}
+
+.nav__request-demo {
+  width: 15rem;
+  height: 5rem;
+  color: #212353;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 5px 5px 0px #4b5d681a;
+          box-shadow: 0px 5px 5px 0px #4b5d681a;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.hero__cta {
+  color: #ffffff;
+  background-color: #9c69e2;
+  width: 15rem;
+  height: 5rem;
+  font-size: 1.2rem;
+  font-weight: 700;
 }
 
 .nav {
@@ -126,6 +161,7 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 2rem;
 }
 
 .nav__logo {
@@ -133,19 +169,29 @@ button {
   width: 3rem;
 }
 
-.nav__request-demo {
-  width: 20rem;
-  height: 6rem;
-  color: #212353;
-  background-color: #ffffff;
-  -webkit-box-shadow: 0px 5px 5px 0px #4b5d681a;
-          box-shadow: 0px 5px 5px 0px #4b5d681a;
-}
-
 .nav__ham-menu div {
+  display: block;
   background-color: black;
   width: 2rem;
-  height: 1rem;
+  height: 3px;
+  position: relative;
+}
+
+.nav__ham-menu div::before, .nav__ham-menu div::after {
+  display: block;
+  content: '';
+  width: 2rem;
+  height: 3px;
+  background-color: black;
+  position: absolute;
+}
+
+.nav__ham-menu div::before {
+  top: 5px;
+}
+
+.nav__ham-menu div::after {
+  top: -5px;
 }
 
 .nav__list {
@@ -167,5 +213,9 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.hero__img {
+  margin: 10vh 0;
 }
 /*# sourceMappingURL=main.css.map */

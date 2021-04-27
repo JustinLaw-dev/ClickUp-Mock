@@ -2,12 +2,24 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
+h1,
+h2 {
+  font-weight: 700;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+}
+
 .hero {
   &__heading {
     color: $color-primary;
+    font-size: 5rem;
+    line-height: 1.1;
   }
 
   &__p {
     color: $color-secondary;
+    font-size: 1.6rem;
   }
 }
