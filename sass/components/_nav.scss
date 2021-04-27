@@ -2,25 +2,38 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 2rem;
 
   &__logo {
     height: 2.5rem;
     width: 3rem;
   }
 
-  &__request-demo {
-    width: 20rem;
-    height: 6rem;
-    color: $color-primary;
-    background-color: $color-white;
-    box-shadow: 0px 5px 5px 0px #4b5d681a;
-  }
-
   &__ham-menu {
     & div {
+      display: block;
       background-color: black;
       width: 2rem;
-      height: 1rem;
+      height: 3px;
+      position: relative;
+
+      &::before,
+      &::after {
+        display: block;
+        content: '';
+        width: 2rem;
+        height: 3px;
+        background-color: black;
+        position: absolute;
+      }
+
+      &::before {
+        top: 5px;
+      }
+
+      &::after {
+        top: -5px;
+      }
     }
   }
 
