@@ -1,0 +1,32 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    height: 2.5rem;
+    width: 3rem;
+  }
+
+  &__request-demo {
+    width: 20rem;
+    height: 6rem;
+    color: $color-primary;
+    background-color: $color-white;
+    box-shadow: 0px 5px 5px 0px #4b5d681a;
+  }
+
+  &__ham-menu {
+    & div {
+      background-color: black;
+      width: 2rem;
+      height: 1rem;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    display: none;
+  }
+}
