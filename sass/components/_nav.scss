@@ -12,19 +12,21 @@
   &__ham-menu {
     & div {
       display: block;
-      background-color: black;
+      background-color: $color-primary;
       width: 2rem;
-      height: 3px;
+      height: 2px;
       position: relative;
+      border-radius: 50px;
 
       &::before,
       &::after {
         display: block;
         content: '';
         width: 2rem;
-        height: 3px;
-        background-color: black;
+        height: 2px;
+        background-color: $color-primary;
         position: absolute;
+        border-radius: 50px;
       }
 
       &::before {

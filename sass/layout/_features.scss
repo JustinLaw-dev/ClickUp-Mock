@@ -1,0 +1,39 @@
+.features {
+  &__card {
+    position: relative;
+    height: 30rem;
+
+    &--img {
+      position: absolute;
+      z-index: 100;
+      width: 40%;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    &-bg {
+      background-color: $color-teal;
+      clip-path: polygon(24% 0, 100% 0, 100% 100%, 0 98%);
+      height: 100%;
+    }
+
+    &--text-container {
+      width: 60%;
+      height: 100%;
+      margin-left: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  &__btn {
+    background: transparent;
+    color: $color-primary;
+    width: 50%;
+    text-decoration: none;
+  }
+
+  &__arrow {
+    color: $color-purp;
+  }
+}
