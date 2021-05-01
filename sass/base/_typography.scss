@@ -59,3 +59,13 @@ p {
     font-size: 1.6rem;
   }
 }
+
+.testimonials {
+  &__heading {
+    color: $color-white;
+  }
+}
+
+.footer__heading {
+  color: $color-primary;
+}

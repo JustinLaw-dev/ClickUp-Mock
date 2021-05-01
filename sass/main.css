@@ -1,3 +1,8 @@
+.hr {
+  width: 100vw;
+  border: 1px solid black;
+}
+
 /* Box sizing rules */
 *,
 *::before,
@@ -153,13 +158,22 @@ p {
   font-size: 1.6rem;
 }
 
+.testimonials__heading {
+  color: #ffffff;
+}
+
+.footer__heading {
+  color: #212353;
+}
+
 button {
   border-radius: 50px;
   border: none;
   font-family: 'Lato', sans-serif;
 }
 
-.nav__request-demo {
+.nav__request-demo,
+.features__request-demo {
   width: 15rem;
   height: 5rem;
   margin-right: 2rem;
@@ -172,13 +186,27 @@ button {
   letter-spacing: 0.5px;
 }
 
-.hero__cta {
+.hero__cta,
+.features__cta {
   color: #ffffff;
-  background-color: #9c69e2;
   width: 15rem;
   height: 5rem;
   font-size: 1.2rem;
   font-weight: 700;
+}
+
+.hero__cta {
+  background-color: #9c69e2;
+}
+
+.features__cta--primary {
+  background-color: #f063b8;
+}
+
+.nav__logo,
+.footer__logo {
+  height: 2.5rem;
+  width: 3rem;
 }
 
 .nav {
@@ -192,11 +220,6 @@ button {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 2rem;
-}
-
-.nav__logo {
-  height: 2.5rem;
-  width: 3rem;
 }
 
 .nav__ham-menu div {
@@ -321,7 +344,13 @@ button {
   margin: 10vh 0;
 }
 
-.hero__cta {
-  margin: 0 auto;
+.testimonials__container {
+  height: 40vh;
+  background-color: #9c69e2;
+  border-radius: 50px;
+}
+
+.testimonials__heading {
+  padding: 3rem;
 }
 /*# sourceMappingURL=main.css.map */

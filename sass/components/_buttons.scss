@@ -4,7 +4,8 @@ button {
   font-family: 'Lato', sans-serif;
 }
 
-.nav__request-demo {
+.nav__request-demo,
+.features__request-demo {
   width: 15rem;
   height: 5rem;
   margin-right: 2rem;
@@ -17,11 +18,19 @@ button {
   letter-spacing: 0.5px;
 }
 
-.hero__cta {
+.hero__cta,
+.features__cta {
   color: $color-white;
-  background-color: $color-purp;
   width: 15rem;
   height: 5rem;
   font-size: 1.2rem;
   font-weight: 700;
+}
+
+.hero__cta {
+  background-color: $color-purp;
+}
+
+.features__cta--primary {
+  background-color: $color-pink;
 }
