@@ -29,6 +29,9 @@ button {
 
 .hero__cta {
   background-color: $color-purp;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .features__cta--primary {

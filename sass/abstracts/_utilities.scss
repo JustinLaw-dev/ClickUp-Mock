@@ -1,4 +1,8 @@
+//hr tied to body margin in base
+
 .hr {
+  position: relative;
+  margin-left: -10vw;
   width: 100vw;
-  border: 1px solid black;
+  border: 1px solid #ebe1f9;
 }

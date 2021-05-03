@@ -7,10 +7,15 @@
     width: 100%;
     border-radius: 25px;
     padding: 2.5rem;
+    margin: 10vh 0;
   }
 
   &__img {
     max-width: 100%;
     height: auto;
+  }
+
+  & p {
+    margin: 5vh 0;
   }
 }

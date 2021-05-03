@@ -16,6 +16,10 @@ h3 {
   font-size: 2rem;
 }
 
+h4 {
+  color: $color-primary;
+}
+
 p {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
@@ -58,6 +62,10 @@ p {
   &__arrow {
     font-size: 1.6rem;
   }
+
+  &__card--text-container p {
+    margin: 1rem 0;
+  }
 }
 
 .testimonials {
@@ -66,6 +74,23 @@ p {
   }
 }
 
-.footer__heading {
-  color: $color-primary;
+.footer {
+  &__heading {
+    color: $color-primary;
+  }
+
+  &__name-heading {
+    margin-left: 1rem;
+  }
+
+  &__section-heading,
+  li {
+    font-size: 1.6rem;
+    font-family: 'Lato';
+    color: $color-primary;
+  }
+
+  &__section-heading {
+    font-weight: 700;
+  }
 }
