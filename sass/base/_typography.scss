@@ -72,6 +72,22 @@ p {
   &__heading {
     color: $color-white;
   }
+
+  &__name {
+    &--primary {
+      font-weight: 700;
+      color: $color-primary;
+    }
+
+    &--secondary {
+      font-size: 1.2rem;
+      color: $color-purp;
+    }
+  }
+
+  &__comment {
+    font-size: 1.4rem;
+  }
 }
 
 .footer {

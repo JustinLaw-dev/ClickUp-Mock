@@ -1,4 +1,12 @@
 .features {
+  &__heading {
+    margin-top: 5vh;
+  }
+
+  &__list {
+    margin-top: 10vh;
+  }
+
   &__card {
     position: relative;
     height: 30rem;
@@ -14,6 +22,7 @@
     &-bg {
       background-color: $color-teal;
       clip-path: polygon(24% 0, 100% 0, 100% 100%, 0 98%);
+      inset: 50px;
       height: 100%;
     }
 

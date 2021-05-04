@@ -1,12 +1,42 @@
 .testimonials {
   &__container {
     margin: 10vh 0;
-    height: 40vh;
+    height: 55vh;
     background-color: $color-purp;
-    border-radius: 50px;
+    border-radius: 25px;
   }
 
   &__heading {
     padding: 3rem;
+  }
+
+  &__carousel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+  }
+
+  &__card {
+    width: 70%;
+    height: 35vh;
+    padding: 1rem;
+    border-radius: 25px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    &--img {
+      width: 4rem;
+      height: 4rem;
+      background-color: gray;
+      border-radius: 50px;
+    }
+
+    &--text-box {
+      text-align: center;
+    }
   }
 }
