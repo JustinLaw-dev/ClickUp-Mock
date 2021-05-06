@@ -3,6 +3,7 @@
   justify-content: space-between;
   align-items: center;
   margin-top: 2rem;
+  width: 100%;
 
   &__ham-menu {
     & div {
@@ -32,11 +33,37 @@
         top: -5px;
       }
     }
+
+    @include respond(small-desktop) {
+      display: none;
+    }
+  }
+
+  &__left {
+    @include respond(small-desktop) {
+      display: flex;
+      justify-content: space-between;
+      width: 50%;
+    }
   }
 
   &__list {
     list-style: none;
     display: flex;
     display: none;
+
+    & li {
+      &:hover {
+        cursor: pointer;
+        color: $color-primary;
+        font-weight: 700;
+      }
+    }
+
+    @include respond(small-desktop) {
+      display: flex;
+      justify-content: space-evenly;
+      width: 75%;
+    }
   }
 }

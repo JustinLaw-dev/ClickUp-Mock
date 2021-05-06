@@ -99,6 +99,7 @@ body {
   margin: 0 10vw;
   background: -webkit-gradient(linear, left top, left bottom, from(#f6fafd), color-stop(19.4%, #ffffff));
   background: linear-gradient(180deg, #f6fafd 0%, #ffffff 19.4%);
+  overflow-x: hidden;
 }
 
 body {
@@ -130,10 +131,23 @@ p {
   color: #4b5d68;
 }
 
+.nav__list {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #4b5d68;
+}
+
 .hero__heading {
   color: #212353;
   font-size: 5rem;
   line-height: 1.1;
+}
+
+@media only screen and (min-width: 1366px) {
+  .hero__heading {
+    font-size: 6rem;
+  }
 }
 
 .hero__p {
@@ -146,11 +160,18 @@ p {
   color: #212353;
 }
 
+@media only screen and (min-width: 1366px) {
+  .about__heading {
+    font-size: 3.5rem;
+    line-height: 1;
+  }
+}
+
 .features__heading, .features__h3 {
   color: #212353;
 }
 
-.features__heading {
+.features__heading, .features__heading--text {
   text-align: center;
 }
 
@@ -178,6 +199,13 @@ p {
 
 .testimonials__comment {
   font-size: 1.4rem;
+}
+
+@media only screen and (min-width: 1366px) {
+  .testimonials__comment {
+    line-height: 2;
+    margin-top: 1rem;
+  }
 }
 
 .footer__heading {
@@ -227,34 +255,42 @@ button {
   font-family: 'Lato', sans-serif;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 .nav__request-demo,
 .features__request-demo {
-  width: 15rem;
-  height: 5rem;
   margin-right: 2rem;
   color: #212353;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 5px 5px 0px #4b5d681a;
           box-shadow: 0px 5px 5px 0px #4b5d681a;
   font-size: 1.2rem;
+  padding: 1rem 2rem;
   font-weight: 700;
   letter-spacing: 0.5px;
+}
+
+@media only screen and (min-width: 1366px) {
+  .nav__request-demo,
+  .features__request-demo {
+    font-size: 1.6rem;
+  }
 }
 
 .hero__cta,
 .features__cta {
   color: #ffffff;
-  width: 15rem;
-  height: 5rem;
   font-size: 1.2rem;
+  padding: 1rem 3rem;
   font-weight: 700;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1366px) {
   .hero__cta,
   .features__cta {
-    width: 20vw;
-    height: 8vh;
+    font-size: 1.6rem;
   }
 }
 
@@ -264,6 +300,14 @@ button {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+
+@media only screen and (min-width: 1366px) {
+  .hero__cta {
+    left: 0;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
 }
 
 .features__cta--primary {
@@ -287,6 +331,7 @@ button {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 2rem;
+  width: 100%;
 }
 
 .nav__ham-menu div {
@@ -316,12 +361,48 @@ button {
   top: -5px;
 }
 
+@media only screen and (min-width: 1366px) {
+  .nav__ham-menu {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .nav__left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 50%;
+  }
+}
+
 .nav__list {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   display: none;
+}
+
+.nav__list li:hover {
+  cursor: pointer;
+  color: #212353;
+  font-weight: 700;
+}
+
+@media only screen and (min-width: 1366px) {
+  .nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: 75%;
+  }
 }
 
 .about__container {
@@ -350,6 +431,8 @@ button {
             flex-direction: row;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    width: 80%;
+    margin: 10vh auto;
   }
 }
 
@@ -381,6 +464,12 @@ button {
   }
 }
 
+@media only screen and (min-width: 1366px) {
+  .about__text-container {
+    margin: 5vh 0;
+  }
+}
+
 .features__heading {
   margin-top: 5vh;
 }
@@ -396,6 +485,9 @@ button {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     height: 65vw;
   }
 }
@@ -409,6 +501,12 @@ button {
 @media only screen and (min-width: 1024px) {
   .features__card {
     width: 50%;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .features__card {
+    width: 40%;
   }
 }
 
@@ -638,6 +736,17 @@ button {
   }
 }
 
+@media only screen and (min-width: 1024px) {
+  .testimonials {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .testimonials__container {
   margin: 10vh 0;
   height: 55vh;
@@ -648,6 +757,13 @@ button {
 @media only screen and (min-width: 667px) and (orientation: landscape) {
   .testimonials__container {
     height: 75vh;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .testimonials__container {
+    height: 75vh;
+    width: 80%;
   }
 }
 
@@ -667,6 +783,12 @@ button {
       -ms-flex-pack: center;
           justify-content: center;
   list-style: none;
+}
+
+@media only screen and (min-width: 1024px) {
+  .testimonials__carousel {
+    -webkit-mask: -webkit-linear-gradient(left, white 5%, white 60%, rgba(255, 255, 255, 0));
+  }
 }
 
 .testimonials__card {
@@ -693,6 +815,20 @@ button {
 @media only screen and (min-width: 1024px) {
   .testimonials__card {
     width: 60%;
+    margin-top: 5rem;
+    padding-top: 4rem;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .testimonials__card {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
   }
 }
 
@@ -707,6 +843,13 @@ button {
   text-align: center;
 }
 
+@media only screen and (min-width: 1366px) {
+  .testimonials__card--text-box {
+    width: 60%;
+    text-align: left;
+  }
+}
+
 .testimonials__pagination {
   width: 70%;
   font-size: 2rem;
@@ -718,6 +861,12 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media only screen and (min-width: 1024px) {
+  .testimonials__pagination {
+    width: 95%;
+  }
 }
 
 .testimonials__circles {
@@ -756,6 +905,11 @@ button {
   opacity: 0.5;
 }
 
+#testCard1 {
+  position: relative;
+  left: 5%;
+}
+
 #testCard2 {
   display: none;
 }
@@ -765,6 +919,8 @@ button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    position: relative;
+    left: 10%;
   }
 }
 /*# sourceMappingURL=main.css.map */

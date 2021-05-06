@@ -28,11 +28,23 @@ p {
   color: $color-secondary;
 }
 
+.nav__list {
+  font-family: 'Lato', sans-serif;
+
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: $color-secondary;
+}
+
 .hero {
   &__heading {
     color: $color-primary;
     font-size: 5rem;
     line-height: 1.1;
+
+    @include respond(small-desktop) {
+      font-size: 6rem;
+    }
   }
 
   &__p {
@@ -45,6 +57,11 @@ p {
   &__heading {
     font-size: 2.5rem;
     color: $color-primary;
+
+    @include respond(small-desktop) {
+      font-size: 3.5rem;
+      line-height: 1;
+    }
   }
 }
 
@@ -54,7 +71,8 @@ p {
     color: $color-primary;
   }
 
-  &__heading {
+  &__heading,
+  &__heading--text {
     text-align: center;
   }
 
@@ -87,6 +105,11 @@ p {
 
   &__comment {
     font-size: 1.4rem;
+
+    @include respond(small-desktop) {
+      line-height: 2;
+      margin-top: 1rem;
+    }
   }
 }
 

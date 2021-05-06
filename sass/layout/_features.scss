@@ -9,6 +9,7 @@
     @include respond(tab-land) {
       display: flex;
       flex-wrap: wrap;
+      justify-content: space-evenly;
       height: 65vw;
     }
   }
@@ -20,6 +21,10 @@
 
     @include respond(tab-land) {
       width: 50%;
+    }
+
+    @include respond(small-desktop) {
+      width: 40%;
     }
 
     &--img {

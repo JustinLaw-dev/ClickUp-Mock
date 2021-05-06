@@ -21,22 +21,25 @@
   <body>
     <header>
       <nav class="nav">
-        <img
-          class="nav__logo"
-          src="./assets/img/logo.png"
-          alt="ClickUp Mock Logo"
-        />
-        <div>
-          <button class="nav__request-demo">Request Demo &rarr;</button>
-          <button class="nav__ham-menu">
-            <div></div>
-          </button>
+        <div class="nav__left">
+          <img
+            class="nav__logo"
+            src="./assets/img/logo.png"
+            alt="ClickUp Mock Logo"
+          />
+
           <ul class="nav__list">
             <li>About</li>
             <li>Help</li>
             <li>Features</li>
             <li>Signup</li>
           </ul>
+        </div>
+        <div>
+          <button class="nav__request-demo">Request Demo &rarr;</button>
+          <button class="nav__ham-menu">
+            <div></div>
+          </button>
         </div>
       </nav>
     </header>
@@ -76,7 +79,7 @@
 
     <section class="features">
       <h2 class="features__heading">Features</h2>
-      <p>
+      <p class="features__heading--text">
         Some of the features and advantages that we provide for those of you who
         store data in this Data Warehouse.
       </p>
@@ -169,7 +172,7 @@
       <div class="testimonials__container">
         <h2 class="testimonials__heading">Testimonials</h2>
         <ul class="testimonials__carousel">
-          <li class="testimonials__card">
+          <li class="testimonials__card" id="testCard1">
             <div class="testimonials__card--img"></div>
             <div class="testimonials__card--text-box">
               <h3 class="testimonials__name--primary">John Fang</h3>
