@@ -9,7 +9,7 @@ button {
 }
 
 .nav__request-demo,
-.features__request-demo {
+.footer__request-demo {
   margin-right: 2rem;
   color: $color-primary;
   background-color: $color-white;
@@ -25,8 +25,14 @@ button {
   }
 }
 
+.footer__request-demo {
+  @include respond(tab-land) {
+    margin-left: 2rem;
+  }
+}
+
 .hero__cta,
-.features__cta {
+.footer__cta {
   color: $color-white;
   font-size: 1.2rem;
   padding: 1rem 3rem;
@@ -49,6 +55,6 @@ button {
   }
 }
 
-.features__cta--primary {
+.footer__cta--primary {
   background-color: $color-pink;
 }

@@ -5,7 +5,7 @@
 
   @include respond(tab-land) {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     margin: 5vh 0;
     align-items: center;
   }
@@ -18,12 +18,25 @@
       height: 100%;
       margin: 0;
     }
+
+    @include respond(big-desktop) {
+      // position: relative;
+      // left: -150%;
+    }
   }
 
   &__text-box {
     @include respond(tab-land) {
       order: 1;
+      width: 50%;
+    }
+
+    @include respond(big-desktop) {
       width: 30%;
     }
+  }
+
+  &__p {
+    width: 70%;
   }
 }

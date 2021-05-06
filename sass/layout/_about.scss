@@ -30,16 +30,25 @@
 
   & p {
     margin: 5vh 0;
+    @include respond(tab-land) {
+      margin: 1rem 0;
+    }
+
+    @include respond(big-desktop) {
+      margin: 2rem 0;
+      line-height: 2;
+    }
   }
 
   &__text-container {
     @include respond(tab-land) {
       order: 2;
       width: 60%;
+      margin: 5vh 0;
     }
 
-    @include respond(small-desktop) {
-      margin: 5vh 0;
+    @include respond(big-desktop) {
+      width: 50%;
     }
   }
 }

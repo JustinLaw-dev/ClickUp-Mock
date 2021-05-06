@@ -9,11 +9,23 @@ h2 {
 
 h2 {
   font-size: 2.5rem;
+
+  @include respond(small-desktop) {
+    font-size: 2.75rem;
+  }
+
+  @include respond(big-desktop) {
+    font-size: 3rem;
+  }
 }
 
 h3 {
   font-weight: 400;
   font-size: 2rem;
+
+  @include respond(small-desktop) {
+    font-size: 1.6rem;
+  }
 }
 
 h4 {
@@ -41,10 +53,6 @@ p {
     color: $color-primary;
     font-size: 5rem;
     line-height: 1.1;
-
-    @include respond(small-desktop) {
-      font-size: 6rem;
-    }
   }
 
   &__p {
@@ -55,11 +63,9 @@ p {
 
 .about {
   &__heading {
-    font-size: 2.5rem;
     color: $color-primary;
 
     @include respond(small-desktop) {
-      font-size: 3.5rem;
       line-height: 1;
     }
   }
@@ -127,9 +133,15 @@ p {
     }
   }
 
-  &__section-heading,
-  li {
+  &__section-heading {
     font-size: 1.6rem;
+    font-family: 'Lato';
+    color: $color-primary;
+    margin-bottom: 3rem;
+  }
+
+  & li {
+    font-size: 1.4rem;
     font-family: 'Lato';
     color: $color-primary;
   }

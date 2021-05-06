@@ -3,6 +3,14 @@
     margin-top: 5vh;
   }
 
+  &__heading--text {
+    @include respond(tab-land) {
+      margin: 0 auto;
+      margin-top: 5vh;
+      width: 60%;
+    }
+  }
+
   &__list {
     margin-top: 10vh;
 
@@ -10,7 +18,11 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-evenly;
-      height: 65vw;
+      height: 80vh;
+      margin-bottom: 2rem;
+    }
+
+    @include respond(small-desktop) {
     }
   }
 
@@ -39,6 +51,11 @@
       clip-path: polygon(24% 0, 100% 0, 100% 100%, 0 100%);
       height: 100%;
       filter: url(#round);
+      position: relative;
+
+      &-icon {
+        position: absolute;
+      }
     }
 
     &--text-container {
@@ -49,6 +66,7 @@
       flex-direction: column;
       justify-content: center;
       padding: 0 5px;
+      z-index: 300;
     }
   }
 
@@ -75,4 +93,43 @@
 }
 #cardBg4 {
   background-color: $color-blue;
+}
+
+#cardBg1Ellipse {
+  right: 15%;
+  top: 20%;
+  z-index: -1;
+}
+
+#cardBg1Bean {
+  top: 5%;
+  right: 5%;
+  z-index: -1;
+}
+
+#cardBg2Bean {
+  transform: rotate(180deg);
+  bottom: 5%;
+  right: 5%;
+  z-index: -1;
+}
+
+#cardBg3Ellipse {
+  transform: scaleX(-1);
+  right: 5%;
+  top: 5%;
+  z-index: -1;
+}
+
+#cardBg4Ellipse {
+  right: 5%;
+  bottom: 5%;
+  z-index: -1;
+}
+
+#cardBg4Bean {
+  transform: rotate(120deg);
+  top: 5%;
+  left: 25%;
+  z-index: -1;
 }

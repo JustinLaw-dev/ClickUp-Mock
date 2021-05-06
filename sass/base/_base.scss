@@ -5,6 +5,10 @@ html {
     font-size: 68.75%;
   }
 
+  @include respond(big-desktop) {
+    font-size: 75%;
+  }
+
   // @include respond(phone) {
   //   font-size: 50%;
   // }
