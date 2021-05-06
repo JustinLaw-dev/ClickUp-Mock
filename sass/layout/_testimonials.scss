@@ -4,10 +4,14 @@
     height: 55vh;
     background-color: $color-purp;
     border-radius: 25px;
+
+    @include respond(phone-land-small) {
+      height: 75vh;
+    }
   }
 
   &__heading {
-    padding: 3rem;
+    padding: 2.5rem;
   }
 
   &__carousel {
@@ -15,6 +19,9 @@
     flex-direction: row;
     justify-content: center;
     list-style: none;
+
+    @include respond(tab-land) {
+    }
   }
 
   &__card {
@@ -28,6 +35,10 @@
     justify-content: space-evenly;
     align-items: center;
 
+    @include respond(tab-land) {
+      width: 60%;
+    }
+
     &--img {
       width: 4rem;
       height: 4rem;
@@ -38,5 +49,51 @@
     &--text-box {
       text-align: center;
     }
+  }
+
+  &__pagination {
+    width: 70%;
+    font-size: 2rem;
+    color: white;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__circles {
+    display: flex;
+    align-items: center;
+    width: 20%;
+    justify-content: space-evenly;
+
+    &--active {
+      width: 1.5rem;
+      height: 1.5rem;
+      background-color: $color-pink;
+      border-radius: 50px;
+    }
+
+    &--other {
+      width: 1rem;
+      height: 1rem;
+      background-color: $color-white;
+      border-radius: 50px;
+    }
+  }
+
+  &__arrows {
+    font-size: 2rem;
+    &--right {
+      padding-left: 1rem;
+      opacity: 0.5;
+    }
+  }
+}
+
+#testCard2 {
+  display: none;
+
+  @include respond(tab-land) {
+    display: flex;
   }
 }

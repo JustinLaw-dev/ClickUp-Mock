@@ -8,14 +8,32 @@
     border-radius: 25px;
     padding: 2.5rem;
     margin: 10vh 0;
+
+    @include respond(tab-land) {
+      flex-direction: row;
+      justify-content: space-around;
+    }
   }
 
   &__img {
     max-width: 100%;
     height: auto;
+
+    @include respond(tab-land) {
+      order: 2;
+      width: 30%;
+      height: 100%;
+    }
   }
 
   & p {
     margin: 5vh 0;
+  }
+
+  &__text-container {
+    @include respond(tab-land) {
+      order: 2;
+      width: 60%;
+    }
   }
 }

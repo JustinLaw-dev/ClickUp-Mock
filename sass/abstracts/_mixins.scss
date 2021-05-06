@@ -6,7 +6,7 @@
   }
 
   @if $breakpoint == phone-land-small {
-    @media only screen and (min-width: 668px) and (orientation: landscape) {
+    @media only screen and (min-width: 667px) and (orientation: landscape) {
       @content;
     }
   }
@@ -23,20 +23,8 @@
     }
   }
 
-  @if $breakpoint == tab-port-pro {
-    @media only screen and (min-width: 1024px) and (orientation: portrait) {
-      @content;
-    }
-  }
-
   @if $breakpoint == tab-land {
-    @media only screen and (min-width: 1280px) and (orientation: landscape) {
-      @content;
-    }
-  }
-
-  @if $breakpoint == tab-land-pro {
-    @media only screen and (min-width: 1366px) and (orientation: landscape) {
+    @media only screen and (min-width: 1024px) {
       @content;
     }
   }

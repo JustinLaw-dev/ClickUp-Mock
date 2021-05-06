@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Justin Law - ClickUp Project</title>
-    <link rel="shortcut icon" href="./assets/img/logo.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./assets/img/logo.png"
+      type="image/x-icon"
+    />
 
     <link rel="stylesheet" href="./sass/main.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -170,21 +174,35 @@
             <div class="testimonials__card--text-box">
               <h3 class="testimonials__name--primary">John Fang</h3>
               <p class="testimonials__name--secondary">wordfaang.com</p>
-              <p class="testimonials__comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id faucibus nisl tincidunt eget. </p>
+              <p class="testimonials__comment">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Id
+                faucibus nisl tincidunt eget.
+              </p>
             </div>
           </li>
-          <!-- <li class="testimonials__card">
+          <li class="testimonials__card" id="testCard2">
             <div class="testimonials__card--img"></div>
             <div class="testimonials__card--text-box">
               <h3 class="testimonials__name--primary">Jeny Doe</h3>
               <p class="testimonials__name--secondary">UX Engineer</p>
-              <p class="testimonials__comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id faucibus nisl tincidunt eget. </p>
+              <p class="testimonials__comment">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Id
+                faucibus nisl tincidunt eget.
+              </p>
             </div>
-          </li> -->
+          </li>
         </ul>
         <div class="testimonials__pagination">
-          <div class="testimonials__circles"></div>
-          <div class="testimonials__pagination"><span>&larr;</span><span>&rarr;</span></div>
+          <div class="testimonials__circles">
+            <div class="testimonials__circles--active"></div>
+            <div class="testimonials__circles--other"></div>
+          </div>
+          <div class="testimonials__arrows">
+            <span class="testimonials__arrows--left">&larr;</span
+            ><span class="testimonials__arrows--right">&rarr;</span>
+          </div>
         </div>
       </div>
     </section>
@@ -214,11 +232,16 @@
               src="./assets/img/logo.png"
               alt="ClickUp Mock Logo"
             />
-          <h3 class="footer__name-heading">DataWarehouse</h3>
+            <h3 class="footer__name-heading">DataWarehouse</h3>
           </div>
-          <p>Warehouse Society, 234 Bahagia Ave Street PRBW 29281</p>
-          <p>info@warehouse.project</p>
-          <p>1-232-3434 (Main)</p>
+          <p class="footer__text--primary">
+            Warehouse Society, 234
+            <span class="footer__text--span"
+              >Bahagia Ave Street PRBW 29281</span
+            >
+          </p>
+          <p class="footer__text--secondary">info@warehouse.project</p>
+          <p class="footer__text--secondary">1-232-3434 (Main)</p>
         </div>
 
         <div class="footer__nav">
@@ -253,19 +276,28 @@
           </div>
         </div>
       </div>
-
     </footer>
 
-    <svg style="visibility: hidden; position: absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <svg
+      style="visibility: hidden; position: absolute"
+      width="0"
+      height="0"
+      xmlns="http://www.w3.org/2000/svg"
+      version="1.1"
+    >
       <defs>
-            <filter id="round">
-                <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur" />    
-                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
-                <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
-            </filter>
-        </defs>
+        <filter id="round">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur" />
+          <feColorMatrix
+            in="blur"
+            mode="matrix"
+            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+            result="goo"
+          />
+          <feComposite in="SourceGraphic" in2="goo" operator="atop" />
+        </filter>
+      </defs>
     </svg>
-    
 
     <script src="app.js"></script>
   </body>

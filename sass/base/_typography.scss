@@ -97,6 +97,11 @@ p {
 
   &__name-heading {
     margin-left: 1rem;
+    color: $color-primary;
+
+    @include respond(tab-land) {
+      margin-left: 3rem;
+    }
   }
 
   &__section-heading,
@@ -108,5 +113,22 @@ p {
 
   &__section-heading {
     font-weight: 700;
+  }
+
+  &__text {
+    &--primary {
+      color: $color-primary;
+    }
+
+    &--secondary {
+      color: $color-primary;
+      font-weight: 300;
+    }
+
+    &--span {
+      @include respond(tab-land) {
+        display: block;
+      }
+    }
   }
 }
